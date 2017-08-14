@@ -1,5 +1,5 @@
 module TypeSignature where
-  
+
 functionH :: [Integer] -> Integer
 functionH (x:_) = x
 
