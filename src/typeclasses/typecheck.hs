@@ -1,4 +1,5 @@
 module Typecheck where
+import qualified Data.List as List
 
 data Person = Person Bool deriving Show
 
@@ -43,3 +44,6 @@ equalityForall p p' = p == p'
 
 comparePapus :: Papu -> Papu -> Bool
 comparePapus p p' = p > p'
+
+jung :: Ord a => [a] -> a
+jung xs = head (List.sort xs)
